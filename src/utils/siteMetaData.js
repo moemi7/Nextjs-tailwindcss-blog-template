@@ -1,20 +1,20 @@
 // please update required information
 const siteMetadata = {
-    title: 'Next.js Blog With Tailwind CSS and Contentlayer',
-    author: 'CodeBucks',
-    headerTitle: 'Next.js Blog',
-    description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
-    language: 'en-us',
+    title: 'Sun-digital webdesign',
+    author: 'Mohamed Taouil',
+    headerTitle: 'Sun-digital webdesign',
+    description: 'Website laten maken?, +31 6 85147122, sun-digital biedt de beste kwaliteit en comfortabelste ervaring',
+    language: 'nl-nl',
     theme: 'system', // system, dark or light
-    siteUrl: 'https://create-blog-with-nextjs.vercel.app', // your website URL
-    siteLogo: '/logo.png',
+    siteUrl: 'https://sun-digital.nl', // your website URL
+    siteLogo: '/sundigital.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
-    email: 'codebucks27@gmail.com', 
-    github: 'https://github.com/codebucks27',
-    twitter: 'https://twitter.com/code_bucks',
-    facebook: 'https://facebook.com',
-    youtube: 'https://youtube.com/codebucks',
-    linkedin: 'https://www.linkedin.com/in/codebucks/',
+    email: 'info@sun-digital.nl', 
+    github: 'https://github.com/moemi7',
+    twitter: 'https://twitter.com/sun-digital',
+    facebook: 'https://www.facebook.com/profile.php?id=61558177906738',
+    youtube: 'https://www.youtube.com/@mohamedtaouil4019',
+    linkedin: 'https://www.linkedin.com/company/105223737',
     dribbble: 'https://www.dribbble.com',
     locale: 'en-US',
   }
