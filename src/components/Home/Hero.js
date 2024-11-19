@@ -14,7 +14,7 @@ const Hero = ({blogs}) => {
     <div>
     <div className=''>
      
-        <Image src={'/sun.jpg'}
+        <Image src={'/sunny.jpeg'}
         placeholder='blur'
         blurDataURL={'blog.image.blurhashDataUrl'}
         alt={'blog.title'}

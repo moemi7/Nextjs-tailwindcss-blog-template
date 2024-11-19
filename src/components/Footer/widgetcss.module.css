@@ -1,0 +1,49 @@
+.widgetContainer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    overflow: hidden;
+  }
+  
+  .iframe {
+    width: 400px;
+    height: 80vh;
+    position: fixed;
+    bottom: 10px;
+    right: -420px;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slideIn {
+    transform: translateX(-420px);
+  }
+  
+  .slideOut {
+    transform: translateX(0);
+  }
+  
+  .openButton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #00f5ff, #00ff6b);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 99999;
+    transition: background 0.5s ease, transform 0.3s ease;
+  }
+  
+  .openButton:hover {
+    background: linear-gradient(135deg, #00ff6b, #00f5ff);
+    transform: scale(1.05);
+  }
+  

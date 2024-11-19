@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
 import Link from "next/link";
 import siteMetadata from "@/src/utils/siteMetaData";
+import ReuzenpandaWidget from "./widget";
 
 const Footer = () => {
   const {
@@ -90,6 +91,11 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      <div>
+        <ReuzenpandaWidget />
+        
+      </div>
+    
     </footer>
   );
 };

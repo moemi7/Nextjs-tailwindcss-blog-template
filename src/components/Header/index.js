@@ -16,7 +16,15 @@ const toggle = () =>{
   setClick(!click)
 }
   return (
-    <header className="w-full p-4  px-5 sm:px-10 flex items-center justify-between">
+    <div> 
+      <div className="bg-red-600 h-7">
+        <div className="flex justify-end mr-5 text-white">
+          <a href="https://dashboard.sun-digital.nl">Ga naar je dashboard</a>
+        </div>
+
+
+      </div>
+        <header className="w-full p-4  px-5 sm:px-10 flex items-center justify-between">
         <Logo />
 
         <button className="inline-block sm:hidden z-50" onClick={toggle} aria-label="Hamburger Menu">
@@ -76,7 +84,19 @@ const toggle = () =>{
             <Link href="/contact" className="mx-2">Contact</Link>
             <Link href="/portfolio" className="mx-2">Portfolio</Link>
 
-            <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }
+      
+        </nav>
+        <div className=" hidden sm:flex items-center">
+            <a href={siteMetadata.linkedin} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Reach out to me via LinkedIn" target="_blank"><LinkedinIcon className="hover:scale-125 transition-all ease duration-200" /></a>
+            <a href={siteMetadata.twitter} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Reach out to me via Twitter" target="_blank"><TwitterIcon className="hover:scale-125 transition-all ease duration-200" /></a>
+            <a href={siteMetadata.github} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Check my profile on Github" target="_blank"><GithubIcon className="  hover:scale-125 transition-all ease duration-200 dark:fill-light" /></a>
+        </div>
+    </header>
+    </div>
+  )
+}
+/*
+        <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }
             className={cx("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-dark text-light" :
             "bg-light text-dark" )}
             aria-label="theme-switcher"
@@ -85,14 +105,6 @@ const toggle = () =>{
                   mode === "light" ? <MoonIcon className={"fill-dark"} />  : <SunIcon className={"fill-dark"} />
                 }
             </button>
-        </nav>
-        <div className=" hidden sm:flex items-center">
-            <a href={siteMetadata.linkedin} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Reach out to me via LinkedIn" target="_blank"><LinkedinIcon className="hover:scale-125 transition-all ease duration-200" /></a>
-            <a href={siteMetadata.twitter} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Reach out to me via Twitter" target="_blank"><TwitterIcon className="hover:scale-125 transition-all ease duration-200" /></a>
-            <a href={siteMetadata.github} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Check my profile on Github" target="_blank"><GithubIcon className="  hover:scale-125 transition-all ease duration-200 dark:fill-light" /></a>
-        </div>
-    </header>
-  )
-}
+            */
 
 export default Header;

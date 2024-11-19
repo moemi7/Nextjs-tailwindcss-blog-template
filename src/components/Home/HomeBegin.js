@@ -14,9 +14,13 @@ const HomeBegin = ({}) => {
         <h1 className=' inline-block items-center flex  justify-center text-4xl'>
             Your website is our masterpiece - Sun-digital
         </h1>
+        <br>
+        </br>
+        <br>
+        </br>
 
         <div className='flex gap-5 items-center justify-center cols-3'>
-
+        
 
 
         </div>

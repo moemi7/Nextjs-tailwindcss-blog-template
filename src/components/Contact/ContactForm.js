@@ -19,25 +19,25 @@ export default function ContactForm() {
       Hallo! mijn naam is{" "}
       <input
         type="text"
-        placeholder="your name"
+        placeholder="Je naam"
         {...register("name", { required: true, maxLength: 80 })}
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
       En ik wil sparren over een project, mijn mailadres is
-      <input type="email" placeholder="your@email" {...register("email", {})}  className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
+      <input type="email" placeholder="Jouw@mail" {...register("email", {})}  className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"/>
       of bereik me op
       <input
         type="tel"
-        placeholder="your phone"
+        placeholder="telefoonnummer"
         {...register("phone number", {})}
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
       Hier gaat me project over: <br />
       <textarea {...register("project details", {})} 
-      placeholder="My project is about..."
+      placeholder="Mijn project gaat over"
       rows={3}
       className="w-full outline-none border-0 p-0 mx-0 focus:ring-0  placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent" />
